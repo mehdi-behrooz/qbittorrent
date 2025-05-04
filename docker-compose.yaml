@@ -4,7 +4,7 @@ services:
     container_name: test-qbittorrent
     volumes:
       - config:/config/
-      - /var/www/downloads:/downloads/
+      - downloads:/downloads/
     environment:
       - LOG_LEVEL=DEBUG
       - OVERRIDE_MAIN_CONFIG=false
@@ -31,3 +31,4 @@ services:
 
 volumes:
   config:
+  downloads:
